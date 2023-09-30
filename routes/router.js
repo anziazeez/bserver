@@ -1,6 +1,6 @@
 const express = require('express')
 const { register, login, getBalance, moneyTransfer, accountStatement, accountDelete } = require('../controllers/logic')
-const { jwtMiddleware } = require('./middlewares/jwtMiddleware')
+const { jwtMiddleware } = require('../middlewares/jwtMiddleware')
 
 //router object
 const router = new express.Router()
